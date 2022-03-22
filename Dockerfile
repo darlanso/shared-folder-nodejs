@@ -2,5 +2,5 @@ FROM node:17-alpine
 WORKDIR /app
 COPY . .
 RUN npm install 
-RUN npm start
+CMD [ "node", "src/index.js"]
 EXPOSE 3000
